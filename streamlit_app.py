@@ -39,8 +39,7 @@ def create_or_check_app_folder(app_name):
 def streamlit():
     
     # Define the API key and server URL
-    # API_KEY = '29026213a22b4af7cd55a662e4558e436872fc94b4f0b29ad4aec31a8d6909d6'
-    SERVER_URL = 'http://192.168.0.113:81'
+    SERVER_URL = 'http://ADD YOUR LOCAL IP ADDR:81'
     tab1.title("File Upload and Scan")
 
     # Initialize session_state
