@@ -3,7 +3,7 @@ import time
 
 def run_all_apps():
     # Run MobSf dcoker container.
-    mobsf_command = ['docker', 'run', '-it', '-p', '8000:8000', 'opensecurity/mobile-security-framework-mobsf:latest']
+    mobsf_command = ['docker', 'run', '-it', '-p', '8000:8000', 'opensecurity/mobile-security-framework-mobsf:latest'] # Removed an option "--rm" add it after "-it" if you want to start fresh.
     
     # Define the command to run your Flask app (replace 'flask_app.py' with your Flask script)
     flask_command = ['python', 'flask_app.py']
