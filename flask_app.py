@@ -61,4 +61,4 @@ def delete_scan_result():
     return response.text, response.status_code
 
 if __name__ == '__main__':
-    app.run(host='192.168.0.113', port=81, debug=True)
+    app.run(host='ADD YOUR LOCAL IP ADDR', port=81, debug=True)
