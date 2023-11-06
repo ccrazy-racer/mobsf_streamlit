@@ -85,6 +85,7 @@ def streamlit():
                 scan_response = requests.get(f'{SERVER_URL}/api/v1/scan/{st.session_state.api_data}', headers=headers)        
                 if scan_response.status_code == 200:
                     print(scan_response.text)
+                    tab2.write("Wait for 2 minutes do not refresh page... later press on download...")
                 else:
                     tab1.write(f"Scan failed: {scan_response.text}")
 
@@ -130,8 +131,7 @@ def streamlit():
 
                 if selected_report.lower().endswith('.pdf'):
                     # Provide a download button for the PDF
-                    if tab2.button("View report"):
-                        webbrowser.open_new_tab(report_path)
+                    tab2.download_button(label="Download report", data= report_path, file_name= selected_report)
                 else:
                     tab2.write("This report is not a PDF file and cannot be displayed.")
                     
