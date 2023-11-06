@@ -1,1 +1,1 @@
-ssh -i "mobsf_codecraft_server.pem" ec2-user@ec2-51-20-144-193.eu-north-1.compute.amazonaws.com
+
