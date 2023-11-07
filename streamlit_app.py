@@ -131,7 +131,9 @@ def streamlit():
 
                 if selected_report.lower().endswith('.pdf'):
                     # Provide a download button for the PDF
-                    tab2.download_button(label="Download report", data= report_path, file_name= selected_report)
+                    with open(report_path, "rb") as pdf_file:
+                        PDFbyte = pdf_file.read()
+                    tab2.download_button(label="Download report", data= PDFbyte, file_name= selected_report)
                 else:
                     tab2.write("This report is not a PDF file and cannot be displayed.")
                     
