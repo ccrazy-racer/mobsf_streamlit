@@ -15,8 +15,8 @@ This repository contains an implementation with a user interface (UI) built with
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/mobsf-streamlit-ui.git
-   cd mobsf-streamlit-ui
+   git clone https://github.com/ccrazy-racer/mobsf-streamlit.git
+   cd mobsf-streamlit
 
 2. Create a folder named "reports" within the same directory as the Python files. This folder is necessary for the application to store reports. If you skip this step, you may encounter an error indicating that the "reports" folder does not exist.
 
