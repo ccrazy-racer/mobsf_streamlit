@@ -10,7 +10,7 @@ import os
 today = date.today()
 
 tab1, tab2 = st.tabs(["Scan App", " 🕓 Recent Scans"])
-
+want_password=True
 
 # Define the path to the directory where reports are stored
 reports_directory = 'reports'  # Replace with your actual directory path
@@ -181,9 +181,9 @@ def check_password():
         st.error("😕 User not known or password incorrect")
     return False
 
-
-if not check_password():
-    st.stop()
+if(want_password):
+    if not check_password():
+        st.stop()
 
 # Main Streamlit app starts here
 
