@@ -49,3 +49,16 @@ Streamlit: Streamlit - The fastest way to create web apps
 
 
 ### ccrazy-racer
+### passowrd protection
+```
+at C:\Users\<username>\.streamlit create a secrets.toml file 
+sample file 
+# .streamlit/secrets.toml
+
+[passwords]
+
+alice= "lit123"
+bob = "pwd2"
+```
+## enabling passowrd authentication 
+simple change want_password=True in streamli_app.py in line 13
